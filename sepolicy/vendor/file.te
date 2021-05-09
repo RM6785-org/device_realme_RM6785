@@ -1,4 +1,4 @@
-type proc_tp, fs_type, proc_type;
+type vendor_proc_tp, fs_type, proc_type;
 type proc_fingerprint, fs_type, proc_type;
 type proc_fastchg_fw, fs_type, proc_type;
 type proc_sensor_feature, fs_type, proc_type;
