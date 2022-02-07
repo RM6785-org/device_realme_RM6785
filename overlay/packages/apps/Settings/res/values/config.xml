@@ -14,4 +14,7 @@
 <resources>
     <!-- Whether to show Smooth Display feature in Settings Options -->
     <bool name="config_show_smooth_display">true</bool>
+    
+    <!-- Whether to show a preference item for mobile plan -->
+    <bool name="config_show_mobile_plan">false</bool>
 </resources>
