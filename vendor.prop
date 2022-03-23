@@ -163,3 +163,6 @@ dalvik.vm.heaptargetutilization=0.75
 # Wifi
 ro.vendor.wifi.sap.interface=ap0
 wifi.concurrent.interface=ap0
+wifi.direct.interface=p2p0
+wifi.interface=wlan0
+wifi.tethering.interface=ap0
