@@ -23,9 +23,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Call proprietary blob setup
 $(call inherit-product, vendor/realme/RM6785/RM6785-vendor.mk)
 
-# Extra 
-$(call inherit-product, vendor/realme/extra/product.mk)
-
 # RealmeParts
 $(call inherit-product-if-exists, packages/apps/RealmeParts/parts.mk)
 
