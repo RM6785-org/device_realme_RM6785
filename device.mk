@@ -16,7 +16,7 @@
 
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
-
+$(call inherit-product-if-exists, vendor/pixel-additional/config.mk)
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
@@ -279,7 +279,6 @@ PRODUCT_PACKAGES += \
 
 # Telephony
 PRODUCT_BOOT_JARS += \
-    ImsServiceBase \
     mediatek-common \
     mediatek-framework \
     mediatek-ims-base \
@@ -287,9 +286,6 @@ PRODUCT_BOOT_JARS += \
     mediatek-telecom-common \
     mediatek-telephony-base \
     mediatek-telephony-common \
-
-PRODUCT_PACKAGES += \
-    ImsServiceBase
 
 PRODUCT_PACKAGES += \
     libshim_vtservice

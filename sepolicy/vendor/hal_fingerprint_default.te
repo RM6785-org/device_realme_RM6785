@@ -8,7 +8,7 @@ set_prop(hal_fingerprint_default, vendor_fingerprint_prop)
 binder_call(hal_fingerprint_default, hal_fingerprint_default)
 
 allow hal_fingerprint_default {
-    mobicore_user_device
+    vendor_mobicore_user_device
     goodix_device
 }:chr_file rw_file_perms;
 

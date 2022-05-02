@@ -22,22 +22,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/realme/RM6785/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/palladium/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := palladium_RM6785
+PRODUCT_NAME := aosp_RM6785
 PRODUCT_DEVICE := RM6785
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := RM6785
 PRODUCT_MANUFACTURER := realme
 
 # Gapps
-PALLADIUM_BUILD_VARIANT := GAPPS
-
-# Official-build-only
-PALLADIUM_BUILD_TYPE := OFFICIAL
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.palladium.maintainer=IDK
+TARGET_INCLUDE_CARRIER_SETTINGS := true
 
 BUILD_FINGERPRINT := "realme/RMX2001/RMX2001L1:10/QP1A.190711.020/1594211000:user/release-keys"
 
